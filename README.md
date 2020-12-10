@@ -2,10 +2,6 @@
 
 初めての参加でAmazonギフト券1万円ゲットのチャンス！Qiita Advent Calendar 2020
 詳しくはこちら
-
-44
-
-0
 hollyhock0518
 @hollyhock0518
 2019年06月18日に更新
