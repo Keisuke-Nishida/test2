@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/print2.css">
+    <title>出荷情報明細</title>
+    <style>
+        @font-face {
+            font-family: 'MyFont';
+            {{--            src:url('{{ asset('fonts/ipaexg.ttf')}}');--}}
+            src:url('/var/www/verification/public/fonts/ipaexg.ttf');
+        }
+
+        table.top-table th{
+          padding:15px;
+          text-align:left;
+        }
+
+        table.top-table td{
+          padding:15px;
+          text-align:left;
+        }
+
+          table.item-table th{
+            padding:5px;
+            text-align:left;
+          }
+
+          table.item-table td{
+            padding-top:5px;
+            padding-bottom:20px;
+            padding-left:10px;
+            text-align:left;
+          }
+
+    </style>
+</head>
+<body>
+<section class="one-page">
+    <header>
+        <div class="top-header">出荷情報明細</div>
+        <div class="top-date-1">2020年01月01日</div>
+        <div class="top-date-2">ページ：　01　/　01</div>
+    </header>
+
+    <div class="top-information">
+        <div class="top-information-1">
+            <div class="top-information-border-1">
+
+                        <h4>お届け先名</h4>
+                  <div style="display: inline">
+                    <div style=" float: left">
+                        <div><span>　住所　　　　</span><span>○○○市○○○○○○○○○○○
+                          <p><span>　　　　　　　○○○○○○○○○○○○○○○</span></span>
+                        </div>
+                        <div>
+                          <span>　気付　　　　</span><span>○○○○○○○○○○○○○○様</span>
+                        </div>
+                        <div>
+                          <span>　お送り先名　</span><span>○○○○○○○○○○○○○○様</span>
+                        </div>
+                    </div>
+                      <!-- <div class="place-1">
+                        <p>　　郵便番号　</p><p>012-3456</p>
+                        <p>　　電話番号　</p><p>000-000-0000</p>
+                      </div> -->
+                    <div>
+                        　　　　郵便番号<br>
+                              <span>　　　　　012-3456</span>
+                              <br>
+                        　　　　電話番号<br>
+                         <span>　　　　　000-000-0000</span>
+                    </div>
+
+                  </div>
+
+            </div>
+        </div>
+
+        <div class="top-information-2">
+            <div class="top-information-border-2">
+
+              <h4>お得意先様名</h4>
+              <div> <span>　株式会社○○○○○○○様</span> </div>
+              <div class="text-center"> <span>　(No.0000000)</span> </div>
+              <div> <span>　口　　座：</span><span>1(種　苗)</span> </div>
+              <div> <span>　伝票区分：</span><span>売　上</span> </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="top-table-information">
+
+        <table class="top-table">
+            <thead>
+
+                <tr>
+                    <th>受注No.</th>
+                    <th>受注確定日</th>
+                    <th>出荷日</th>
+                    <th>指図番号</th>
+                    <th>（希望）納期</th>
+                    <th>（希望）納期区分</th>
+                    <th>予約区分</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>0123456</td>
+                    <td>2020/01/01</td>
+                    <td>2020/01/01</td>
+                    <td>0123456789</td>
+                    <td>2020/01/01</td>
+                    <td>○○○○○○○○○○</td>
+                    <td>予約</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <div class="item-table-information">
+        <table class="item-table">
+            <thead>
+
+                <tr>
+                  <th>No.</th>
+                  <th>商品名</th><!--150-->
+                  <th>商品<p>コード</th><!--50-->
+                  <th>包装<p>単位</th><!--40-->
+                  <th>数量</th><!--50-->
+                  <th>状況</th><!--30-->
+                  <th>製品<p>ロット</th><!--50-->
+                  <th>運送方法</th><!--50-->
+                  <th>取扱便<p>区分</th><!--50-->
+                  <th>送り状No.</th><!--70-->
+                  <th>売上No.</th><!--50-->
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>1</td>
+              <td>○○○○○○○○○○</td>
+              <td>ABC012</td>
+              <td>ABC01</td>
+              <td>1,234,567</td>
+              <td>引当済</td>
+              <td>ABC012</td>
+              <td>自動車便</td>
+              <td>クロネコ<p>メール便</td>
+              <td>0123456789<p>0123456789</td>
+              <td>0123456</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>○○○○○○○○○○</td>
+                <td>ABC012</td>
+                <td>ABC01</td>
+                <td>1,234,567</td>
+                <td>引当済</td>
+                <td>ABC012</td>
+                <td>自動車便</td>
+                <td>クロネコ<p>メール便</td>
+                <td>0123456789<p>0123456789</td>
+                <td>0123456</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>○○○○○○○○○○</td>
+              <td>ABC012</td>
+              <td>ABC01</td>
+              <td>1,234,567</td>
+              <td>引当済</td>
+              <td>ABC012</td>
+              <td>自動車便</td>
+              <td>クロネコ<p>メール便</td>
+              <td>0123456789<p>0123456789</td>
+              <td>0123456</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>○○○○○○○○○○</td>
+              <td>ABC012</td>
+              <td>ABC01</td>
+              <td>1,234,567</td>
+              <td>引当済</td>
+              <td>ABC012</td>
+              <td>自動車便</td>
+              <td>クロネコ<p>メール便</td>
+              <td>0123456789<p>0123456789</td>
+              <td>0123456</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>○○○○○○○○○○</td>
+              <td>ABC012</td>
+              <td>ABC01</td>
+              <td>1,234,567</td>
+              <td>引当済</td>
+              <td>ABC012</td>
+              <td>自動車便</td>
+              <td>クロネコ<p>メール便</td>
+              <td>0123456789<p>0123456789</td>
+              <td>0123456</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>○○○○○○○○○○</td>
+              <td>ABC012</td>
+              <td>ABC01</td>
+              <td>1,234,567</td>
+              <td>引当済</td>
+              <td>ABC012</td>
+              <td>自動車便</td>
+              <td>クロネコ<p>メール便</td>
+              <td>0123456789<p>0123456789</td>
+              <td>0123456</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>○○○○○○○○○○</td>
+              <td>ABC012</td>
+              <td>ABC01</td>
+              <td>1,234,567</td>
+              <td>引当済</td>
+              <td>ABC012</td>
+              <td>自動車便</td>
+              <td>クロネコ<p>メール便</td>
+              <td>0123456789<p>0123456789</td>
+              <td>0123456</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>○○○○○○○○○○</td>
+              <td>ABC012</td>
+              <td>ABC01</td>
+              <td>1,234,567</td>
+              <td>引当済</td>
+              <td>ABC012</td>
+              <td>自動車便</td>
+              <td>クロネコ<p>メール便</td>
+              <td>0123456789<p>0123456789</td>
+              <td>0123456</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+</section>
+</body>
+</html>

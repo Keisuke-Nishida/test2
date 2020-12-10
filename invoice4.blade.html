@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/print2.css">
+    <title>請求情報明細</title>
+    <style>
+        @font-face {
+            font-family: 'MyFont';
+{{--            src:url('{{ asset('fonts/ipaexg.ttf')}}');--}}
+            src:url('/var/www/verification/public/fonts/ipaexg.ttf');
+        }
+
+        table.top-table th{
+          padding:15px;
+          text-align:left;
+        }
+        table.top-table td{
+          padding:15px;
+          text-align:left;
+        }
+        table.item-table th{
+        padding: 3px;
+          text-align:center;
+        }
+        table.item-table td{
+        padding: 15px 10px 15px 10px;
+          text-align:left;
+        }
+
+    </style>
+</head>
+<body>
+<section class="one-page">
+    <header>
+        <div class="top-header">請求情報明細</div>
+        <div class="top-date">2020年01月01日</div>
+    </header>
+
+    <div class="top-information">
+        <div class="top-information-1">
+            <div class="top-information-border">
+                <div><span>〒012-3456</span><span>　〇〇〇県</span>
+                </div>
+                <div><span>〇〇〇市〇〇〇〇〇〇〇〇〇〇〇</span></div>
+                <div><span>〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇</span></div>
+                <div><span><ins>株式会社〇〇〇〇〇〇〇〇〇〇様</ins></span></div>
+                <div class="text-right"><span>(No.0000000)　</span></div>
+            </div>
+        </div>
+        <div class="top-information-2">
+            <div class="top-information-border">
+                <div><span>口　　座：</span><span>種　苗</span></div>
+                <div><span>伝票区分：</span><span>売　上</span></div>
+            </div>
+            <div class="top-information-border" style="padding: 5pt">
+                <div><span>お届け先名</span></div>
+                <div><span>〇〇〇〇〇〇〇〇〇〇〇〇〇〇様</span></div>
+            </div>
+        </div>
+        <div class="top-information-3">
+            <div class="top-information-border">
+                <div><span>出荷日　　：</span><span>2020年01月01日</span></div>
+                <div><span>出荷場所　：</span><span>本社(00)</span></div>
+                <div><span>運賃区分　：</span><span>立替払い</span></div>
+                <div><span>運送方法　：</span><span>自動車便</span></div>
+                <div><span>運送指定　：</span><span></span></div>
+            </div>
+        </div>
+        <div class="top-information-4">
+            <div style="padding: 15px; margin-bottom: 10px;">
+                <div><span>〒600-8686</span></div>
+                <div><span>京都市下京区梅小路</span></div>
+                <div><span>タキイ種苗株式会社　営業部</span></div>
+                <div class="text-right"><span>【中部支店】</span></div>
+                <div><span>ＴＥＬ：075-365-0123（代）</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="top-table-information">
+        <table class="top-table">
+            <thead>
+                <tr>
+                    <th style="width:100px" class="text-left">伝票番号</th>
+                    <th style="width:100px" class="text-left">納品書番号</th>
+                    <th style="width:80px" class="text-left">個数</th>
+                    <th style="width:100px" class="text-left">貴指図番号</th>
+                    <th style="width:150px" class="text-left">取扱便名等</th>
+                    <th style="width:500px" class="text-left"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>0123456-001</td>
+                    <td>012345</td>
+                    <td>001個</td>
+                    <td>01234567890</td>
+                    <td>○○○○○○○○運輸</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="item-table-information">
+        <table class="item-table">
+            <thead>
+                <tr>
+                    <th style="width:80px;">商品コード</th>
+                    <th style="width:180px;">商品名</th>
+                    <th style="width:1px;">※</th>
+                    <th style="width:70px;">一箱容量</th>
+                    <th style="width:70px;">包装単位</th>
+                    <th style="width:70px;">数量</th>
+                    <th style="width:100px;">単価</th>
+                    <th style="width:120px;">金額(円)</th>
+                    <th style="width:120px;"></th>
+                    <th style="width:30px;">予約<br>=1</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>ABC010</td>
+                <td>○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○</td>
+                <td>　</td>
+                <td>　</td>
+                <td>１ＤＬ</td>
+                <td class="text-right">1,000.000</td>
+                <td class="text-right">1,000,000.000<br>1,000,000.000</td>
+                <td class="text-right">123,456,789,012</td>
+                <td>　</td>
+                <td>　</td>
+            </tr>
+            <tr>
+                <td>ABC011</td>
+                <td>○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○</td>
+                <td>　</td>
+                <td>　</td>
+                <td>１ＤＬ</td>
+                <td class="text-right">1,000.000</td>
+                <td class="text-right">1,000,000.000<br>1,000,000.000</td>
+                <td class="text-right">123,456,789,012</td>
+                <td>　</td>
+                <td>　</td>
+            </tr>
+            <tr>
+                <td>ABC012</td>
+                <td>○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○</td>
+                <td>　</td>
+                <td>　</td>
+                <td>１ＤＬ</td>
+                <td class="text-right">1,000.000</td>
+                <td class="text-right">1,000,000.000<br>1,000,000.000</td>
+                <td class="text-right">123,456,789,012</td>
+                <td>　</td>
+                <td>　</td>
+            </tr>
+            <tr>
+                <td>ABC013</td>
+                <td>○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○</td>
+                <td>　</td>
+                <td>　</td>
+                <td>１ＤＬ</td>
+                <td class="text-right">1,000.000</td>
+                <td class="text-right">1,000,000.000<br>1,000,000.000</td>
+                <td class="text-right">123,456,789,012</td>
+                <td>　</td>
+                <td>　</td>
+            </tr>
+            <tr>
+                <td>ABC014</td>
+                <td>○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○</td>
+                <td>　</td>
+                <td>　</td>
+                <td>１ＤＬ</td>
+                <td class="text-right">1,000.000</td>
+                <td class="text-right">1,000,000.000<br>1,000,000.000</td>
+                <td class="text-right">123,456,789,012</td>
+                <td>　</td>
+                <td>　</td>
+            </tr>
+            <tr>
+                <td>ABC015</td>
+                <td>○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○</td>
+                <td>　</td>
+                <td>　</td>
+                <td>１ＤＬ</td>
+                <td class="text-right">1,000.000</td>
+                <td class="text-right">1,000,000.000<br>1,000,000.000</td>
+                <td class="text-right">123,456,789,012</td>
+                <td>　</td>
+                <td>　</td>
+            </tr>
+            <tr>
+                <td>ABC016</td>
+                <td>○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○</td>
+                <td>　</td>
+                <td>　</td>
+                <td>１ＤＬ</td>
+                <td class="text-right">1,000.000</td>
+                <td class="text-right">1,000,000.000<br>1,000,000.000</td>
+                <td class="text-right">123,456,789,012</td>
+                <td>　</td>
+                <td>　</td>
+            </tr>
+            <tr>
+                <td>ABC017</td>
+                <td>○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○</td>
+                <td>　</td>
+                <td>　</td>
+                <td>１ＤＬ</td>
+                <td class="text-right">1,000.000</td>
+                <td class="text-right">1,000,000.000<br>1,000,000.000</td>
+                <td class="text-right">123,456,789,012</td>
+                <td>　</td>
+                <td>　</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+</section>
+<section class="one-page">
+    <header>
+        <div class="top-header">請求情報明細</div>
+        <div class="top-date">2020年01月01日</div>
+    </header>
+
+    <div class="top-information">
+        <div class="top-information-1">
+            <div class="top-information-border">
+                <div><span>〒012-3456</span><span>　〇〇〇県</span>
+                </div>
+                <div><span>〇〇〇市〇〇〇〇〇〇〇〇〇〇〇</span></div>
+                <div><span>〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇</span></div>
+                <div><span><ins>株式会社〇〇〇〇〇〇〇〇〇〇様</ins></span></div>
+                <div class="text-right"><span>(No.0000000)　</span></div>
+            </div>
+        </div>
+        <div class="top-information-2">
+            <div class="top-information-border">
+                <div><span>口　　座：</span><span>種　苗</span></div>
+                <div><span>伝票区分：</span><span>売　上</span></div>
+            </div>
+            <div class="top-information-border" style="padding: 5pt">
+                <div><span>お届け先名</span></div>
+                <div><span>〇〇〇〇〇〇〇〇〇〇〇〇〇〇様</span></div>
+            </div>
+        </div>
+        <div class="top-information-3">
+            <div class="top-information-border">
+                <div><span>出荷日　　：</span><span>2020年01月01日</span></div>
+                <div><span>出荷場所　：</span><span>本社(00)</span></div>
+                <div><span>運賃区分　：</span><span>立替払い</span></div>
+                <div><span>運送方法　：</span><span>自動車便</span></div>
+                <div><span>運送指定　：</span><span></span></div>
+            </div>
+        </div>
+        <div class="top-information-4">
+            <div style="padding: 15px; margin-bottom: 10px;">
+                <div><span>〒600-8686</span></div>
+                <div><span>京都市下京区梅小路</span></div>
+                <div><span>タキイ種苗株式会社　営業部</span></div>
+                <div class="text-right"><span>【中部支店】</span></div>
+                <div><span>ＴＥＬ：075-365-0123（代）</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="top-table-information">
+        <table class="top-table">
+            <thead>
+            <tr>
+                <th style="width:100px;" class="text-left">伝票番号</th>
+                <th style="width:100px;" class="text-left">納品書番号</th>
+                <th style="width:80px;" class="text-left">個数</th>
+                <th style="width:100px;" class="text-left">貴指図番号</th>
+                <th style="width:150px;" class="text-left">取扱便名等</th>
+                <th style="width:500px;" class="text-left"></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>0123456-001</td>
+                <td>012345</td>
+                <td>001個</td>
+                <td>01234567890</td>
+                <td>○○○○○○○○運輸</td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="item-table-information">
+        <table class="item-table">
+            <thead>
+            <tr>
+                <th style="width:80px;">商品コード</th>
+                <th style="width:180px;">商品名</th>
+                <th style="width:1px;">※</th>
+                <th style="width:70px;">一箱容量</th>
+                <th style="width:70px;">包装単位</th>
+                <th style="width:70px;">数量</th>
+                <th style="width:100px;">単価</th>
+                <th style="width:120px;">金額(円)</th>
+                <th style="width:120px;"></th>
+                <th style="width:30px;">予約<br>=1</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>ABC018</td>
+                <td>○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○</td>
+                <td>　</td>
+                <td>　</td>
+                <td>１ＤＬ</td>
+                <td class="text-right">1,000.000</td>
+                <td class="text-right">1,000,000.000<br>1,000,000.000</td>
+                <td class="text-right">123,456,789,012</td>
+                <td>　</td>
+                <td>　</td>
+            </tr>
+            <tr>
+                <td>ABC019</td>
+                <td>○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○</td>
+                <td>　</td>
+                <td>　</td>
+                <td>１ＤＬ</td>
+                <td class="text-right">1,000.000</td>
+                <td class="text-right">1,000,000.000<br>1,000,000.000</td>
+                <td class="text-right">123,456,789,012</td>
+                <td>　</td>
+                <td>　</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="text-right"></td>
+                <td class="text-right"></td>
+                <td class="text-right"></td>
+                <td>　</td>
+                <td>　</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="text-right"></td>
+                <td class="text-right"></td>
+                <td class="text-right"></td>
+                <td>　</td>
+                <td>　</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="text-right"></td>
+                <td class="text-right"></td>
+                <td class="text-right"></td>
+                <td>　</td>
+                <td>　</td>
+            </tr>
+            <!-- ここから最終ページのみ表示部分 -->
+            <tr style="height: 34px">
+                <td colspan="5" rowspan="4" style="border: 0;">
+                    <div style="display: inline">
+                        <div style="width: 85mm; float: left; line-height: 17px; padding-right: 30px">
+                            <strong style="padding-bottom: 4px; font-size: 16pt">種　子　と　責　任</strong><br>
+                            <span style="font-size: 9pt;">種子は、播種後の栽培条件、天候等により、その結果が異なることがありますので、結果不良の責めは、お買上げ代金の範囲内とさせていただきます。</span>
+                        </div>
+                        <div style="width: 90mm; float: left; line-height: 17px;">
+                            ＜通信欄＞<br>
+                            <span style="font-size: 0.7em;">単価欄に２行表示している場合、下段は割引後の単価を表します。※印のあるものは軽減税率対象です。</span>
+                            <br><br>
+                            ＜お願い＞<br>
+                            <span style="font-size: 0.7em;">本書と発送品目に相違のある場合は、上記の月日・伝票番号をご記入の上、到着後一週間以内にお知らせください。</span>
+                        </div>
+                    </div>
+                </td>
+                <td colspan="2">送　　　料</td>
+                <td class="text-right">123,456,789,012</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="height: 55px">
+                <td  colspan="2">
+                    10%対象金額<br>
+                    消費税額/税込金額
+                </td>
+                <td class="text-right">123,456,789,012<br>12,345,678,901</td>
+                <td class="text-right"><br>123,456,789,012</td>
+                <td></td>
+            </tr>
+            <tr style="height: 12mm">
+                <td colspan="2" ></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="height: 34px">
+                <td colspan="2">合　　　計</td>
+                <td class="text-right">123,456,789,012</td>
+                <td class="text-right"></td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+</body>
+</html>
